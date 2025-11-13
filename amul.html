@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amul - The Taste of India</title>
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color:#FDE4E4;
+      /*background-image:url(amul\ background.jpg);*/
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff1a1a;
+      color: white;
+      padding: 20px;
+      font-size: 28px;       
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    nav {
+  
+  text-align: center;
+  padding: 10px;
+}
+  nav a {
+      color:rgb(56, 90, 240);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #0d47a1;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+      p{
+        margin-top: 50px;
+      }
+   
+     section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in first row */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      width: 200px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    
+     .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Floating Amul girl */
+    .amul-girl {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 120px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    img {
+      margin-top :auto;
+      border-radius: 10px;
+    }
+
+    
+    
+
+    h1{
+        text-align: Left;
+        font-family:serif;
+        font-style:normal;
+        margin-left: 40px;
+        
+    }
+    h2{
+        text-align: Left;
+        margin-left: 40px;
+        font-family:cursive;
+    }
+    h2:hover {
+  color: #b6092f;
+  transition: 0.3s;
+}
+   h3:hover{
+    color:#b6092f;
+   }
+  
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    footer {
+      background-color: #009933;
+      color: white;
+      padding: 15px;
+      margin-top: 50px;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Amul - The Taste of India</header>
+
+  <img src="amul.jpg" alt="Amul Logo">
+<p>
+    
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+   <section id="about">
+    <h2>About Amul</h2>
+    <p>Amul, the Taste of India, is a leading dairy brand known for its high-quality milk and milk products. Founded in 1946, Amul spearheaded India's White Revolution, transforming the country into the world's largest milk producer.
+       Amul is owned by millions of farmers and stands as a symbol of self-reliance and quality.
+      Amul is India's largest dairy brand.<br>
+    It known for its high-quality milk, butter, cheese,ice cream, and more. 
+    It represents the strength of Indian farmers and the cooperative movement.</p>
+  </section>
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+
+      <div class="product-card">
+        <img src="butter.jpg" alt="Amul Butter" class="slide-up" width="200">
+        <h3>Amul Butter</h3>
+        <h4>Price: 60/-</h4>
+      </div>
+
+      <div class="product-card">
+        <img src="milk.jpg" alt="Amul Milk">
+        <h3>Amul Milk</h3>
+        <h4>Price: 65/-</h4>
+      </div>
+
+      <div class="product-card">
+        <img src="ice cream.jpg" alt="Amul Ice Cream">
+        <h3>Amul Ice Cream</h3>
+        <h4>Price: 150/-</h4>
+      </div>
+
+      <div class="product-card">
+        <img src="cheese.jpg" alt="Amul Cheese">
+        <h3>Amul Cheese</h3>
+        <h4>Price: 130/-</h4>
+      </div>
+
+      <div class="product-card">
+        <img src="chocolate.jpg" alt="Amul Chocolate">
+        <h3>Amul Chocolate</h3>
+        <h4>Price: 100/-</h4>
+      </div>
+
+     
+
+      <div class="product-card">
+        <img src="masti dahi.jpg" alt="Amul Masti Dahi">
+        <h3>Amul Masti Dahi</h3>
+        <h4>Price: 77/-</h4>
+      </div>
+
+     
+
+    </div>
+  </section>
+
+  
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label="name">Name</label>
+      <input type="text"  placeholder="Your Name" required><br><br>
+      <label="Email">Email</label>
+      <input type="email" placeholder="Your Email" required><br><br>
+      <textarea rows="4" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <img src="amul-girl.png" alt="Amul Girl" class="amul-girl">
+
+
+ <footer>
+    © 2025 Amul | The Taste of India
+  </footer><br>
+
+ 
+</body>
+</html>
