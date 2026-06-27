@@ -8,6 +8,16 @@
 </head>
 <body>
   <header>
+    <nav class="navbar">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Project Details</a></li>
+        <li><a href="#contact">Recommendations</a></li>
+      </ul>
+    </nav>
     <div class="profile-container">
     <div class="profile-img">
         <img src="profile.jpg" alt="Profile Photo">
@@ -145,13 +155,41 @@ Through my internship, I am learning how to apply classroom knowledge to real-wo
 </section>
 
   <section id="contact">
-    <h2>Contact Information</h2>
+    <h2>Recommendations</h2>
+    <h3>Manshi Gohil</h3>
+    <h3>D. N. Institute of Computer Applications</h3>
     <h3>mansigohil@gmail.com</h3>
     <h3> 9898985898</h3>
-    <h3>Manshi Gohil</h3>
-    <p></p>
+    
+    <p>
+        "Excellent portfolio!"<br>
+        "Great work and easy to navigate."
+    </p>
+
+    <h3>Add Recommendation</h3>
+
+  <textarea
+    id="new_recommendation"
+    rows="4"
+    cols="50"
+    placeholder="Write your recommendation here..."></textarea>
+
+  <br><br>
+
+  <button onclick="addRecommendation()">
+    Submit
+  </button>
+
+  <!-- Popup -->
+  <div id="popup">
+    <p>Thank you for your recommendation!</p>
+    <button onclick="showPopup(false)">
+      OK
+    </button>
+  </div>
+ <script src="script.js"></script>
   </section>
-  
+   
 </body>
 </html>
 

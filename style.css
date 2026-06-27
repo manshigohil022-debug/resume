@@ -8,8 +8,45 @@ body {
 header {
   text-align: center;
   background:#91a6c3;
-  color: white
-  padding: 50px 0;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 60px 0;
+}
+
+.navbar .logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  text-decoration: underline;
+  font-family: bold;
 }
 
 section {
@@ -30,7 +67,7 @@ section {
 
 .profile-img img {
   width: 250px;
-  margin-left: 280px;
+  margin-left: 10px;
   border: 4px solid #f4f4f4;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   width: 130px;
@@ -68,9 +105,6 @@ section {
   flex: 1.5;
 }
 
-.about-text h2 {
-/*color: #0078d7;*/
-}
 
 .about-details {
   flex: 1;                                 
@@ -96,12 +130,11 @@ section {
   font-size: 15px;
 }
 
-.about-details strong {
-  /*color: #91a6c3;*/
-}
+
+
 
 #education {
-  background: ;
+ /* background: ;*/
   padding: 60px 40px;
   border-radius: 10px;
   margin-top: 40px;
@@ -151,7 +184,7 @@ section {
 }
 #skills {
   padding: 60px 40px;
-  background:  ;
+  /*background:  ;*/
   margin-top: 40px;
   border-radius: 10px;
 }
@@ -182,7 +215,7 @@ section {
 
 .skill-category:hover {
   transform: translateY(-5px);
-  background-color: ;
+  /*background-color: ;*/
 }
 
 .skill-category h3 {
@@ -213,7 +246,7 @@ section {
 
 #portfolio {
   padding: 80px 0;
-  background-color:  ;
+  /*background-color:  ;*/
   text-align: center;
 }
 
@@ -241,9 +274,7 @@ section {
   text-align: center;
 }
 
-.project-card:hover {
-  
-}
+
 
 .project-card img {
   width: 100%;
@@ -298,3 +329,27 @@ section {
     margin-top: 15px;
     margin-left: 380px;
 }
+
+#popup {
+      visibility: hidden;
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      width: 250px;
+      border-radius: 5px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+    }
+
+    #popup button {
+      margin-top: 10px;
+    }
+
+    #new_recommendation{
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
