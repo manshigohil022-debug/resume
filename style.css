@@ -244,13 +244,13 @@ section {
   background: #567080;
 }
 
-#portfolio {
+#project details {
   padding: 80px 0;
   /*background-color:  ;*/
   text-align: center;
 }
 
-#portfolio h2 {
+#project details h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #333;
@@ -312,7 +312,7 @@ section {
   background: #0056b3;
 }
 
-#contact{
+#Recommendation{
   background-color: #91a6c3;
 }
 
